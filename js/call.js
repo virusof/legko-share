@@ -19,12 +19,6 @@ jQuery.fn.visibilityToggle = function() {
     });
 };
 
-$( ".header-updates" ).click(
-  function() {
-    $(".customscroll", this).visibilityToggle();
-  }
-);
-
 !(function($) {
     var toggle = $.fn.toggle;
     $.fn.toggle = function() {
@@ -40,7 +34,7 @@ $( ".header-updates" ).click(
 })(jQuery);
 
 // custom scrollbar
-window.onload = function() {
+$(function() {
     window.dima = baron({
         root: '.wrapper_1',
         scroller: '.scroller',
@@ -77,7 +71,19 @@ window.onload = function() {
         barOnCls: 'baron_h',
         bar: '.scroller__bar_h'
     });
-};
 
 // fancybox
-$('.fancybox').fancybox();
+    $('.fancybox').fancybox();
+
+    $( ".header-updates" ).click(
+        function() {
+            $(".customscroll", this).visibilityToggle();
+        }
+    );
+
+    $( ".edit-message" ).click(
+        function() {
+            $(".edit-message-menu", this).toggle();
+        }
+    );
+});

@@ -24,6 +24,80 @@
 
       <div class="header-updates">
         <div class="count">15</div>
+
+          <div class="customscroll">
+              <div class="wrapper wrapper_1">
+                  <div class="scroller">
+                      <div class="container">
+                          <div class="scroll-title">
+                              У вас 15 уведомлений
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="scroll-item">
+                              <a href="" class="title">Эдуард Кроссельман создал топик «Purchase»</a>
+                              <div class="date">22 мая 2014</div>
+                          </div>
+
+                          <div class="load">
+                              <div class="load__value"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="scroller__bar-wrapper">
+                      <div class="scroller__bar"></div>
+                  </div>
+              </div>
+          </div>
       </div>
 
       <div class="header-search">
@@ -34,7 +108,7 @@
       </div>
 
       <div class="header-logged">
-        <img src="images/tmp/r.png" height="32" width="32" alt="" class="ava">
+        <a href="#profile" class="fancybox"><img src="images/tmp/r.png" height="32" width="32" alt="" class="ava"></a>
         <p>
           <a href="" class="logout">Выйти</a><br>
           <a href="">Лиза Петрова</a>
@@ -45,7 +119,7 @@
     <div class="jumbotron j-messages">
       <div class="question">
       <form action="">
-        <input type="text" id="" value="" class="textbox" placeholder="Задать вопрос">
+        <textarea type="text" id="" value="" class="textbox error" placeholder="Задать вопрос"></textarea>
         <input type="submit" id="" value="Отправить" class="default-button">
       </form>
       </div>
@@ -196,11 +270,15 @@
             <div class="description">
               <h6>Лиза Петрова</h6>
 
-              <div class="wrapper">
-                <textarea name="" id="" cols="" rows="" placeholder="Ваш комментарий"></textarea>
-                <button class="addfile"></button>
-                <input type="button" id="" value="Ответить" class="default-button-orange send">
-              </div>
+                <div class="wrapper">
+                    <div class="addfile-wrapper">
+                        <button class="addfile"></button>
+                        <input type="button" id="" value="Ответить" class="default-button-orange send">
+                    </div>
+                    <div class="addfile-textarea">
+                        <textarea name="" id="" cols="" rows="" placeholder="Ваш комментарий" class="error"></textarea>
+                    </div>
+                </div>
             </div>
           </form>
         </div>
@@ -216,8 +294,62 @@
       </div>
     </div>
 
+  <div id="profile" class="popup">
+      <h3 class="popup-title">Ваш профиль</h3>
+
+      <table>
+          <col width="35%">
+          <col width="65%">
+          <tr>
+              <td class="label"><label for="">Телефон</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label"><label for="">Организация</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label"><label for="">ИНН</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label"><label for="">ОГРН</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label"><label for="">Фамилия</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label"><label for="">Имя</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label"><label for="">Отчество</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label"><label for="">Налоговый режим</label></td>
+              <td class="value"><input type="text" id="" value="" class="popup-textbox" placeholder=""></td>
+          </tr>
+          <tr>
+              <td class="label">&nbsp;</td>
+              <td class="value submit">
+                  <input type="button" id="" value="Отменить" class="default-button cancel">
+                  <input type="submit" id="" value="Сохранить" class="default-button-orange save">
+              </td>
+          </tr>
+      </table>
+  </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <!-- custom scrollbar -->
+    <link rel="stylesheet" href="js/customscrollbar/style.css">
+    <script src="js/customscrollbar/baron.full.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/call.js"></script>

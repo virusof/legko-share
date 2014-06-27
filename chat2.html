@@ -108,7 +108,7 @@
       </div>
 
       <div class="header-logged">
-        <img src="images/tmp/r.png" height="32" width="32" alt="" class="ava">
+        <a href="#profile" class="fancybox"><img src="images/tmp/r.png" height="32" width="32" alt="" class="ava"></a>
         <p>
           <a href="" class="logout">Выйти</a><br>
           <a href="">Лиза Петрова</a>
@@ -119,7 +119,7 @@
     <div class="jumbotron j-messages">
       <div class="question">
         <form action="">
-          <input type="text" id="" value="" class="textbox" placeholder="Задать вопрос">
+          <textarea type="text" id="" value="" class="textbox" placeholder="Задать вопрос"></textarea>
           <input type="submit" id="" value="Отправить" class="default-button">
         </form>
       </div>
@@ -132,9 +132,18 @@
           </div>
 
           <div class="description">
-            <div class="date"><span class="name">Клиент Клиентов</span> <small>16 апреля 2014, 15:25</small></div>
+            <div class="date">
+                <span class="name">Клиент Клиентов</span>
+                <small>16 апреля 2014, 15:25</small>
+                <div class="edit-message">
+                    <ul class="edit-message-menu">
+                        <li><a href="">Редактировать</a></li>
+                        <li><a href="">Удалить</a></li>
+                    </ul>
+                </div>
+            </div>
 
-            <div class="wrapper">
+            <div class="wrapper edit-error">
               <div class="payment">
                 <ul>
                   <li><div class="in">Тариф «SuperPro» - ОСН, Первичка, Правовая поддержка+</div></li>
@@ -142,8 +151,6 @@
                   <li class="ok"><div class="in"><mark>Цена:</mark> <strong>100 500</strong> рублей</div></li>
                   <li class="pay"><div class="in"><a href="" class="default-button-orange">Оплатить</a></div></li>
                 </ul>
-
-                <p><a href="#inline1" class="fancybox">Click Me</a></p>
               </div>
             </div>
           </div>
@@ -156,7 +163,16 @@
               </div>
 
               <div class="description">
-                <div class="date"><span class="name">Клиент Клиентов</span> <small>16 апреля 2014, 15:25</small></div>
+                <div class="date">
+                    <span class="name">Клиент Клиентов</span>
+                    <small>16 апреля 2014, 15:25</small>
+                    <div class="edit-message">
+                        <ul class="edit-message-menu">
+                            <li><a href="">Редактировать</a></li>
+                            <li><a href="">Удалить</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="wrapper">
                   <div class="files">
@@ -170,6 +186,66 @@
             </div>
           </div>
         </div>
+          <div class="item">
+              <div class="view">
+                  <img src="images/tmp/a1.jpg" height="45" width="45" alt="">
+              </div>
+
+              <div class="description">
+                  <div class="date">
+                      <span class="name">Клиент Клиентов</span>
+                      <small>16 апреля 2014, 15:25</small>
+                      <div class="edit-message">
+                          <ul class="edit-message-menu">
+                              <li><a href="">Редактировать</a></li>
+                              <li><a href="">Удалить</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="wrapper">
+                      <div class="payment">
+                          <ul>
+                              <li><div class="in">Тариф «SuperPro» - ОСН, Первичка, Правовая поддержка+</div></li>
+                              <li><div class="in">Период обслуживания - 6 месяцев</div></li>
+                              <li class="ok"><div class="in"><mark>Цена:</mark> <strong>100 500</strong> рублей</div></li>
+                              <li class="pay"><div class="in"><a href="" class="default-button-orange">Оплатить</a></div></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- reply -->
+              <div class="reply">
+                  <div class="item">
+                      <div class="view">
+                          <img src="images/tmp/a1.jpg" height="45" width="45" alt="">
+                      </div>
+
+                      <div class="description">
+                          <div class="date">
+                              <span class="name">Клиент Клиентов</span>
+                              <small>16 апреля 2014, 15:25</small>
+                              <div class="edit-message">
+                                  <ul class="edit-message-menu">
+                                      <li><a href="">Редактировать</a></li>
+                                      <li><a href="">Удалить</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+
+                          <div class="wrapper edit-error">
+                              <div class="files">
+                                  <a href=""><img src="images/pdf.png" height="32" width="30" alt=""><br>otchet1</a>
+                                  <a href=""><img src="images/docx.png" height="32" width="30" alt=""><br>otchet2</a>
+                              </div>
+
+                              <p>Лиза, добрый день.<br>Исправленная версия отчета в приложении.<br>Прошу прощения за задержку и спасибо за ожидание.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
         <!-- add comment -->
         <div class="addcomment">
           <form action="">
@@ -181,14 +257,32 @@
               <h6>Лиза Петрова</h6>
 
               <div class="wrapper">
-                <textarea name="" id="" cols="" rows="" placeholder="Ваш комментарий"></textarea>
-                <button class="addfile"></button>
-                <input type="button" id="" value="Ответить" class="default-button-orange send">
+                  <div class="addfile-wrapper">
+                      <button class="addfile"></button>
+                      <input type="button" id="" value="Ответить" class="default-button-orange send">
+                  </div>
+                  <div class="addfile-textarea">
+                        <textarea name="" id="" cols="" rows="" placeholder="Ваш комментарий"></textarea>
+                  </div>
               </div>
             </div>
           </form>
         </div>
       </div>
+
+       <div class="paginator">
+           <ul>
+               <li class="active"><a href="">1</a></li>
+               <li><a href="">2</a></li>
+               <li><a href="">3</a></li>
+               <li><a href="">4</a></li>
+               <li><a href="">5</a></li>
+               <li><a href="">6</a></li>
+               <li><a href="">7</a></li>
+               <li><a href="">8</a></li>
+               <li><a href="">9</a></li>
+           </ul>
+       </div>
     </div>
 
     <div class="footer">
@@ -200,7 +294,7 @@
     </div>
   </div>
 
-  <div id="inline1" class="popup">
+  <div id="profile" class="popup">
     <h3 class="popup-title">Ваш профиль</h3>
 
     <table>
