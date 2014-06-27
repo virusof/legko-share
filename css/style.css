@@ -450,6 +450,27 @@ strong { font-weight: normal; }
             .addfile-wrapper { float: right; margin-right: 20px; }
                 .addcomment .addfile { cursor: pointer; width: 33px; height: 33px; float: left; margin-left: 7px; border: 0; background: url(../images/plus.png) no-repeat 50% 50%; }
 
+        .addfile-list {
+            max-width: 130px;
+            clear: both;
+            padding: 0 0 0 15px;
+        }
+            .addfile-list .item { margin: 5px 0; padding: 10px 0; border-bottom: 1px solid #ccc; }
+                .addfile-list .icon {
+                    float: left;
+                    margin: 0 15px 0 0;
+                }
+                .addfile-list .description {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 11px;
+                    padding: 0;
+                }
+                .addfile-list .description p {
+                    color: #999999 !important;
+                    font-size: 10px;
+                    margin: 5px 0;
+                }
 
 .payment { margin: 20px 0; max-width: 500px; padding: 0 20px 0 10px; border: 2px solid #1da7a3; border-radius: 10px; }
     .payment li { padding: 0 0 0 20px; list-style: none inside; background: url(../images/ok.png) no-repeat 0 10px; }
